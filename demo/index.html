@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RKit demo</title>
+
+</head>
+
+<body>
+  <button id="upload">Upload</button>
+
+  <script type="module">
+    import { default as RKit } from '/dist/main.js'
+    const button = document.querySelector("#upload")
+    const kit = new RKit()
+    button.addEventListener("click", async () => {
+      await kit.openLocalFile()
+    })
+
+  </script>
+
+</body>
+
+</html>

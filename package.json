@@ -1,0 +1,36 @@
+{
+  "name": "RKit",
+  "version": "1.0.0",
+  "description": "text recognition function based on experimental browser features TextDetector",
+  "source": "pkg/RKit.ts",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/types.d.ts",
+  "targets": {
+    "main": {
+      "outputFormat": "esmodule"
+    }
+  },
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build --no-source-maps",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [
+    "TextDetector",
+    "text",
+    "recognition",
+    "browser",
+    "experimental"
+  ],
+  "author": "dinn",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.8.2",
+    "@parcel/transformer-typescript-types": "2.8.2",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/node": "^18.11.18",
+    "parcel": "^2.8.2",
+    "typescript": ">=3.0.0"
+  }
+}
