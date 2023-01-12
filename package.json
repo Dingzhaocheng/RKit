@@ -2,17 +2,14 @@
   "name": "RKit",
   "version": "1.0.0",
   "description": "text recognition function based on experimental browser features TextDetector",
-  "source": "pkg/RKit.ts",
-  "type": "module",
-  "main": "dist/main.js",
-  "types": "dist/types.d.ts",
+  "source": "index.html",
   "targets": {
     "main": {
       "outputFormat": "esmodule"
     }
   },
   "scripts": {
-    "watch": "parcel watch",
+    "watch": "parcel watch index.html",
     "build": "parcel build --no-source-maps",
     "check": "tsc --noEmit"
   },
